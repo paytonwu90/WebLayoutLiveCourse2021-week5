@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title><%- title %></title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="./assets/style/all.css">
+  </head>
+
+  <body>
+    <nav class="nav flex-column justify-content-between bg-light">
+      <div class="d-flex flex-column">
+        <h1>
+          <a class="nav-link" href="index.html">
+            <img src="./assets/images/logo-ANSWER.svg" alt="logo">
+          </a>
+        </h1>
+        <a class="nav-link link-dark d-flex align-items-center" href="#">
+          <span class="material-icons me-3">
+            assessment
+          </span>
+          Dashboard
+        </a>
+        <a class="nav-link link-dark d-flex align-items-center" href="#">
+          <span class="material-icons me-3">
+            question_answer
+          </span>
+          Question
+        </a>
+        <a class="nav-link link-success active d-flex align-items-center" aria-current="page" href="#"> 
+          <span class="material-icons me-3">
+            assignment
+          </span>
+          Assignment
+        </a>
+        <a class="nav-link link-dark d-flex align-items-center" href="#">
+          <span class="material-icons me-3">
+            video_library
+          </span>
+          Course
+        </a>
+        <a class="nav-link link-dark d-flex align-items-center" href="#">
+          <span class="material-icons me-3">
+            supervisor_account
+          </span>
+          Admin
+        </a>
+        <a class="nav-link link-dark d-flex align-items-center" href="#">
+          <span class="material-icons me-3">
+            settings
+          </span>
+          Settings
+        </a>
+      </div>
+
+      <div class="loginUser d-flex align-items-center">
+        <div class="flex-shrink-0">
+          <img class="rounded-circle" src="./assets/images/andychen.jpeg" alt="login-user">
+        </div>
+        <div class="flex-grow-1 ms-3">
+          <p class="fs-6 fw-bold mb-1">Andy Chen</p>
+          <p class="text-muted font-s">andy0401@mail.com</p>
+        </div>
+      </div>
+    
+    </nav>
+
+    <%- contents %>
+
+    <script src="./assets/js/vendors.js"></script>
+    <script src="./assets/js/all.js"></script>
+  </body>
+
+</html>

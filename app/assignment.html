@@ -1,0 +1,136 @@
+---
+title: Assignment W5作業
+layout: ./app/layout.ejs
+engine: ejs
+current: index
+---
+
+<main class="main">
+  <div class="container px-5 pb-5">
+    <div class="d-flex justify-content-between align-items-center py-4">
+      <div class="d-flex align-items-center">
+        <h2 class="me-5">Assignment</h2>
+        <div class="dropdown">
+          <button class="btn btn-white dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+            All Courses
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </div>
+      </div>
+      <ul class="list-unstyled d-flex align-items-center mb-0">
+        <li class="me-4"><a class="d-block lh-1 link-dark" href="#"><span class="material-icons">search</span></a></li>
+        <li><a class="d-block lh-1 link-dark" href="#"><span class="material-icons">notifications_active</span></a></a></li>
+      </ul>
+    </div>
+    <div class="row align-items-center">
+      <div class="col-12 col-md-4">
+        <div class="dropdown">
+          <button class="btn btn-white dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+            All (4)
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-12 col-md-8">
+        <p class="font-xs text-secondary text-end mb-2">2 comments</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12 col-md-4">
+        <div class="list-group" id="list-tab" role="tablist">
+          <a class="list-group-item list-group-item-action active" id="list-home-list" data-bs-toggle="list" href="#list-home" role="tab" aria-controls="list-home">
+            <div class="d-flex justify-content-between mb-1">
+              <small>Chapter Assignment 2</small>
+              <small>4 hrs ago</small>
+            </div>
+            <div class="d-flex justify-content-between">
+              <p class="fw-bold">Please check this file…</p>
+              <small class="text-secondary">Emily Wang</small>
+            </div>
+          </a>
+          <a class="list-group-item list-group-item-action" id="list-profile-list" data-bs-toggle="list" href="#list-profile" role="tab" aria-controls="list-profile">Profile</a>
+          <a class="list-group-item list-group-item-action" id="list-messages-list" data-bs-toggle="list" href="#list-messages" role="tab" aria-controls="list-messages">Messages</a>
+          <a class="list-group-item list-group-item-action" id="list-settings-list" data-bs-toggle="list" href="#list-settings" role="tab" aria-controls="list-settings">Settings</a>
+        </div>
+      </div>
+      <div class="col-12 col-md-8">
+        <div class="tab-content" id="nav-tabContent">
+          <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">
+            <div class="card mb-3">
+              <div class="card-header">
+                <div>
+                  <small>Chapter Assignment 2 / HTML&CSS</small>
+                  <p class="fw-bold">Please check this file for me, thanks!</p>
+                </div>
+                <!--dot-->
+              </div>
+              <div class="card-body">
+                <div class="d-flex">
+                  <div class="flex-shrink-0">
+                    <img class="avatar-sm rounded-circle" src="./assets/images/emilywang.jpeg" alt="...">
+                  </div>
+                  <div class="flex-grow-1 ms-3 pb-3 border-bottom">
+                    <h4 class="fs-6 fw-bold">Emily Wang</h4>
+                    <small class="text-secondary mb-3">10:38 AM (4 hours ago)</small>
+                    <p class="mt-3 mb-3">Hi Teacher, the attached file is my homework of chapter 2. And here comes a question: Why in the following code the height of the <code class="text-success bg-light px-1 rounded-1">div</code> is bigger than the height of the <code class="text-success bg-light px-1 rounded-1">img</code> ? There is a gap below the image, but it doesn’t seems to be a padding/margin. <br>What is the gap or extra space below image?</p>
+                    <a href="#" class="btn btn-light border" download="HW-2-David.zip">HW-2-David.zip</a>
+                  </div>
+                </div>
+                <div class="d-flex pt-3">
+                  <div class="flex-shrink-0">
+                    <img class="avatar-sm rounded-circle" src="./assets/images/andychen.jpeg" alt="...">
+                  </div>
+                  <div class="flex-grow-1 ms-3">
+                    <h4 class="fs-6 fw-bold">Andy Chen (You)</h4>
+                    <small class="text-secondary mb-3">13:24 AM (1 hours ago)</small>
+                    <p class="mt-3">Hi Teacher, the attached file is my homework of chapter 2. And here comes a question: Why in the following code the height of the <code class="text-success bg-light px-1 rounded-1">div</code> is bigger than the height of the <code class="text-success bg-light px-1 rounded-1">img</code> ? There is a gap below the image, but it doesn’t seems to be a padding/margin. <br>What is the gap or extra space below image?</p>
+                  </div>
+                </div>
+                <!--<div id="editor" class="editor">This is some sample content.</div>-->
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">...2</div>
+          <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">...3</div>
+          <div class="tab-pane fade" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list">...4</div>
+        </div>
+        <div class="d-flex justify-content-between">
+          <div class="d-flex align-items-center">
+            <a href="" class="lh-1 link-dark me-4">
+              <span class="material-icons">chevron_left</span>
+            </a>
+            <a href="" class="lh-1 link-dark">
+              <span class="material-icons">chevron_right</span>
+            </a>
+          </div>
+          <div class="d-flex">
+            <button type="button" class="btn btn-outline-success me-3">Mark as read</button>
+            <button type="button" class="btn btn-success">Reply</button>
+          </div>
+        </div>
+        
+        <!-- Collapse 範例 -->
+        <!--<button class="btn link-success" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+          <span class="material-icons expand_less">
+            expand_less
+          </span>
+          <span class="material-icons expand_more">
+            expand_more
+          </span>
+        </button>
+        <div class="collapse" id="collapseExample">
+          <button type="button" class="btn btn-outline-danger me-3">deactivate</button>
+          <button type="button" class="btn btn-success">edit</button>
+        </div>-->
+      </div>
+    </div>
+  </div>
+</main>
